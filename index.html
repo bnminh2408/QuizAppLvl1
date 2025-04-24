@@ -8,13 +8,27 @@
 </head>
 
 <body>
-    <!-- Startbildschirm -->
-
+    <!-- Startseite -->
     <div id="start-screen">
         <h1>Willkommen zur Quiz App! 🎉</h1>
         <p>Teste dein Wissen über Programmierung!</p>
         <button id="start-btn">Quiz starten</button>
     </div>
+
+   <!-- Modus-Auswahl -->
+    <div id="mode-select" style="display: none;">
+        <h2>Wähle den Modus</h2>
+        <button id="random-btn">🔀 Zufällige Fragen</button>
+        <button id="thema-btn">📚 Nach Thema</button>
+    </div>
+    
+    <!-- Themen-Auswahl -->
+    <div id="thema-auswahl" style="display: none;">
+        <h2>Wähle ein Thema</h2>
+        <button class="thema-btn" data-topic="IT">IT</button>
+        <button class="thema-btn" data-topic="Natur">Natur</button>
+        <button class="thema-btn" data-topic="Mathematik">Mathematik</button>
+      </div>
 
     <!-- Quizbereich (zuerst versteckt) -->
     <div id="quiz-container" style="display: none;">

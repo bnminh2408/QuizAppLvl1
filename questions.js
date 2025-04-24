@@ -1,4 +1,4 @@
-const questions = [
+const allQuestions = [
     {
         question: "Was bedeutet 'if' in einer Programmiersprache?",
         answers: [
@@ -7,7 +7,8 @@ const questions = [
             "Es beendet das Programm",
             "Es definiert eine Funktion"
         ],
-        correct: "Es ist eine Bedingung"
+        correct: "Es ist eine Bedingung",
+        category: "IT"
     },
 
     {
@@ -18,7 +19,8 @@ const questions = [
             "Ein Speicherplatz für Daten",
             "Ein Fehler im Code"
         ],
-        correct: "Ein Speicherplatz für Daten"
+        correct: "Ein Speicherplatz für Daten",
+        category: "IT"
     },
 
     {
@@ -29,7 +31,8 @@ const questions = [
             "Eine Wiederholung von Anweisungen",
             "Eine Art Kommentar"
         ],
-        correct: "Eine Wiederholung von Anweisungen"
+        correct: "Eine Wiederholung von Anweisungen",
+        category: "IT"
     },
 
     {
@@ -40,6 +43,10 @@ const questions = [
             "Hypertext Markup Language",
             "High-level Markup Language"
         ],
-        correct: "Hypertext Markup Language"
+        correct: "Hypertext Markup Language",
+        category: "IT"
     },
 ];
+
+
+let questions = [...allQuestions]; // standardmäßig alle Fragen
