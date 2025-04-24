@@ -5,6 +5,43 @@ body {
     text-align: center;
 }
 
+/* Startbildschirm */
+#start-screen {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#start-screen h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+#start-screen p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#start-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start-btn:hover {
+    background: #45a049;
+}
+
+/* Quiz-Bereich */
 #quiz-container {
     background: white;
     padding: 20px;

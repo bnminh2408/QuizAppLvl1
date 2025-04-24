@@ -1,11 +1,22 @@
 let currentQuestion = 0;
 let score = 0;
 
+// Start
+const startScreen = document.getElementById("start-screen");
+const startBtn = document.getElementById("start-btn");
+const quizContainer = document.getElementById("quiz-container");
+
 const questionBox = document.getElementById("question-box");
 const answersBox = document.getElementById("answers-box");
 const nextBtn = document.getElementById("next-btn");
 const resultBox = document.getElementById("result-box");
 const restartBtn = document.getElementById("restart-btn");
+
+startBtn.addEventListener("click", () => {
+    startScreen.style.display = "none";
+    quizContainer.style.display = "block";
+    showQuestion();
+});
 
 function showQuestion() {
     let q = questions[currentQuestion];
@@ -56,7 +67,8 @@ restartBtn.addEventListener("click", () => {
     currentQuestion = 0;
     score = 0;
     restartBtn.style.display = "none";
-    showQuestion();
+    startScreen.style.display = "block";
+    quizContainer.style.display = "none";
 });
 
 // Starten 

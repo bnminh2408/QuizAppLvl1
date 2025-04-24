@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <title>Quiz App</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="quiz-container">
-    <h1>Quiz App</h1>
-    <div id="question-box"></div>
-    <div id="answers-box"></div>
-    <button id="next-btn">Nächste Frage</button>
-    <div id="result-box"></div>
-    <button id="restart-btn" style="display: none;">Nochmal spielen 🔁</button>
-  </div>
 
-  <script src="questions.js"></script>
-  <script src="main.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Startbildschirm -->
+
+    <div id="start-screen">
+        <h1>Willkommen zur Quiz App! 🎉</h1>
+        <p>Teste dein Wissen über Programmierung!</p>
+        <button id="start-btn">Quiz starten</button>
+    </div>
+
+    <!-- Quizbereich (zuerst versteckt) -->
+    <div id="quiz-container" style="display: none;">
+        <h1>Quiz App</h1>
+        <div id="question-box"></div>
+        <div id="answers-box"></div>
+        <button id="next-btn">Nächste Frage</button>
+        <div id="result-box"></div>
+        <button id="restart-btn" style="display: none;">Nochmal spielen 🔁</button>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
